@@ -61,6 +61,11 @@
     Verify that the contents were copied properly by viewing the contents of ~/.ssh/authorized_keys in the client node. <br/>
     
     ```cat ~/.ssh/authorized_keys``` <br/>
+    
+    For this to work, SSH has to be installed on the nodes. If not already installed, install SSH and start it using the below commands. <br/>
+
+    ```sudo apt-get install ssh``` <br/>
+    ```sudo service ssh start ``` <br/>
 
 4. Verify the SSH connection <br/>
 
