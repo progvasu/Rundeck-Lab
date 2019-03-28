@@ -25,6 +25,18 @@
 1. Create new project <br/>
 
     Fill in the Name and Description and let all other details be set in their default values and click Create.
+    // create a file resources.xml at/var/rundeck/projects/project_name/etc
+    // add
+    <?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  
+<node name="localhost" description="Rundeck server node" tags="" hostname="localhost" osArch="amd64" osFamily="unix" osName="Linux" osVersion="4.4.0-116-generic" username="rundeck"/>
+  
+</project>
+    In configure nodes, add source > file > specify the path and type and click the below mentioned writable.
+    
+    run a ubuntu container as node
 
 2. Add Nodes/Clients to the Project <br/>
 
@@ -78,6 +90,8 @@
     We can run the job manually using the ‘Run Job Now’ button or we can schedule the jobs to run at specified time intervals using ‘Run Job Later’. <br/>
     
     After the job is run, it gives the status of execution, time taken to complete the job and logs of all the job executions till now. This can be seen in the ‘Activity’ tab. <br/>
+
+
 
 
 
